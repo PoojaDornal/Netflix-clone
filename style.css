@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto',sans-serif;
+
+}
+body{
+    background-color: #000;
+}
+
+.container .head
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    width: 100%;
+    z-index: 100000;
+}
+.container .head img{
+    width: 13%;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.container .head a{
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    width: 7%;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 8px;
+     text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.langauage-selection .lang{
+   margin-left: 950px;
+}
+.lang{
+    background-color: black;
+    color: white;
+    /*border-radius: 5px;*/
+    font-size: 15px;
+    padding: 6px 6px;
+    text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    border: 0.5px solid white;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.banner:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom,#000,transparent);
+}
+.banner:after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top,#000,transparent);
+}
+.banner .fit{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+}
+.banner .box{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10000;
+}
+.banner .box .headings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.banner .box .headings h2{
+    color: white;
+   font-size: 2.200rem;
+   font-weight: 800;
+   width: 80%;
+   letter-spacing: 5px;
+}
+
+.banner .box .headings h5{
+    color: white;
+   font-size: 1.625rem;
+   font-weight: 700;
+   padding: 1rem 0;
+}
+.banner .box .headings p{
+    color: white;
+   font-size: 1rem;
+   font-weight: 600;
+   padding: 15px 0;
+   padding-bottom: 20px;
+}
+.banner .box .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.banner .box .search input{
+    font-size: 18px;
+    color: #000;
+    border: 1px solid #8c8c8c;
+    outline: none;
+     border-radius: 2px;
+    padding: 10px ;
+    min-width: 550px;
+    height: 60px;
+    left: 40%;
+    align-items: center;
+}
+.banner .box .search button{
+   /* text-transform: uppercase;*/
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    border-radius: 2px;
+    background:#e50914 ;
+    box-shadow: 0 1 0 rgba(0,0,0,0.45);
+    font-size: 1.625rem;
+    min-width: 310px;
+    height: 60px;
+}
+.img-icon
+{
+    width: 25px;
+    height: 20px; 
+    align-items: center;
+    color: white;
+}
+.btn1{
+   cursor:pointer;
+   background-color: red;
+     color: white;
+}
+.part1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   padding: 1rem 1rem;
+    border-top:0.2rem solid  rgb(41, 40, 40) ;
+    border-bottom: 0.2rem  solid rgb(41, 40, 40) ;
+    
+}
+.part1 .talk{
+    width: 40%;
+}
+.part1 .talk h2{
+    color: #fff;
+    font-size: 3.1rem;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+ }
+ .part1 .talk p{
+     color: #fff;
+     font-size: 1.5rem;
+ }
+.part1 .img{
+    width: 45%;
+}
+
+.part1 .img img{
+    width: 100%;
+}
+
+.part2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   padding: 1rem 1rem;
+    border-top:0.2rem solid  rgb(41, 40, 40) ;
+    border-bottom: 0.2rem  solid rgb(41, 40, 40) ;
+    
+}
+.part2 .talk{
+    width: 48%;
+}
+.part2 .talk h2{
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+ }
+ .part2 .talk p{
+     color: #fff;
+     font-size: 1.5rem;
+     font-weight: 600;
+ }
+.part2 .img{
+    width: 45%;
+}
+
+.part2 .img img{
+    width: 100%;
+}
+
+.list{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.list h1{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 3rem 0 4rem 0;
+}
+.title{
+    background: #303030;
+    padding: 20px 30px;
+    display: flex;
+    font-size: 1.7rem;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+.icon{
+    width: 20px;
+    position: relative;
+    
+}
+.icon::before, .icon::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    top: -1.5px;
+}
+.icon::after{
+    transform: rotate(90deg);
+    transition: 0.5% linear;
+}
+.text{
+    background-color: #303030;
+    color: #fff;
+    line-height: 35px;
+    margin: 3px 0;
+    height: 0;
+    opacity: 0;
+     font-size: 1.4rem;
+     font-weight: 500;
+   
+}   
+.item:target .text{
+    opacity: 1;
+    height: auto;
+    padding: 20px 30px;
+    margin: 0;
+    border-top:2px solid #000 ;
+    margin-bottom: 6px;
+}
+.item:target .icon::after
+{
+    transform: rotateY(90deg);
+}
+
+.banner2{
+    border-bottom: 0.6rem solid #111;
+}
+
+.banner2 .box .headings p{
+    
+    color: white;
+   font-size: 1rem;
+   font-weight: 500;
+   margin-left: 25%;
+   padding: 15px 0;
+   padding-top:20px ;
+   padding-bottom: 20px;
+}
+.banner2 .box .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.banner2 .box .search input{
+    font-size: 20px;
+    color: rgb(14, 13, 13);
+    border: 1px solid #6d6c6c;
+    outline: none;
+     border-radius: 2px;
+    padding: 10px ;
+    min-width: 550px;
+    height: 60px;
+    left: 40%;
+    align-items: center;
+}
+.banner2 .box .search button{
+   /* text-transform: uppercase;*/
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    border-radius: 2px;
+    background:#e50914 ;
+    box-shadow: 0 1 0 rgba(0,0,0,0.45);
+    font-size: 1.625rem;
+    min-width: 310px;
+    height: 60px;
+ 
+}
+.footer  
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 2rem 0;
+    
+}
+.foot p{
+    color: #fff;
+    font-size: 15px;
+    margin-left: 20%;
+    padding: 2%  2%;
+   
+}
+.footer .column1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:  auto;
+    width: 50%;
+}
+.footer .column1 li{
+    padding: 4px 0;
+}
+.footer .column1 li a{
+    color: #ccc;
+    text-decoration: none;
+}
+.footer .column1 li a:hover{
+    border-bottom: 1px solid #303030 ;
+}    
+.foot1{
+    padding: 0;
+    margin-left: 20%;
+    font-size: 15px;
+    color: #fff;
+}
+
+@media screen and (max-width:787px) {
+
+ .container .head
+{ 
+        padding: 10px 30px;
+}
+.container .head img{
+    width: 20%;
+}
+.banner .box .headings h2{
+    font-size: 40px;
+    width: 100%;
+   letter-spacing: 1px;
+}
+
+.banner .box .headings h5{
+    font-size:22px;
+   padding: 0.8rem 0;
+}
+.banner .box .headings p{
+    
+   font-size: 20px;
+    padding: 8px 0;
+   padding-bottom: 10px;
+}
+.banner .box .search{
+     flex-direction: column;
+}
+.banner .box .search input{
+     min-width: 310px;
+     margin-bottom: 20px;
+}
+
+.part1{
+       flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+   padding: 1rem 1rem;
+    text-align: center;
+}
+.part1 .talk{
+    width: 80%;
+    margin: 20px 0 30px 0;
+}
+.part1 .talk h2{
+     font-size: 3rem;
+    letter-spacing: 1.5px;
+    padding-bottom: 5px;
+ }
+ .part1 .talk p{
+       font-size: 1.5rem;
+ }
+.part1 .img{
+    width: 80%;
+}
+
+.part2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   padding: 1rem 1rem;
+    text-align: center;
+    
+}
+.part2 .talk{
+    width: 80%;
+    margin: 20px 0 30px 0;
+}
+.part2 .talk h2{
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    padding-bottom: 5px;
+ }
+ .part2 .talk p{
+     font-size: 1.5rem;
+     
+  }
+.part2 .img{
+    width: 80%;
+}
+.list{
+    width: 80%;
+}
+.list h1{
+   font-size: 1.5rem;
+  text-align: center;  
+}
+.title{
+
+    font-size: 1.7rem;
+}
+.banner .box{
+    margin: 4rem 0;
+   
+}
+.banner2 .box .headings p
+{   
+   font-size: 1rem;
+   padding: 13px 0;
+   padding-bottom: 17px;
+}
+.banner2 .box .search{
+     flex-direction: column;
+    margin-bottom: 15px;
+}
+.banner2 .box .search input{
+    font-size: 20px;
+    min-width: 310px;
+    margin-bottom: 20px;
+    
+}
+.banner2 .box .search button{
+   /* text-transform: uppercase;*/
+    font-size: 1.625rem;
+    min-width: 310px;
+    height: 60px;
+ }
+ 
+.footer  
+{
+    flex-direction: column;
+}
+.foot p{
+    color: #fff;
+    font-size: 15px;
+    margin-left: 20%;
+    padding: 2%  2%;
+   
+}
+.footer .column1{
+      width: 50%;
+}
+
+}
+@media screen and (max-width:469px) {
+   
+    .container .head img{
+        width: 23%;
+    }
+    .banner .box .headings h2{
+        font-size: 1.5rem;
+         letter-spacing: 0.5px;
+    }
+   .banner .box .headings h5{
+        font-size:10px;
+    }
+    .banner .box .headings p{
+       font-size: 12px;
+         
+    }
+    .banner .box .search{
+         flex-direction: column;
+    }
+    .banner .box .search input{
+         min-width: 300px;
+         margin-bottom: 10px;
+    }
+    
+    .part1 .talk h2{
+         font-size: 3rem;
+        letter-spacing: 1.2px;
+     }
+     .part1 .talk p{
+           font-size: 1.2rem;
+     }
+    .part2 .talk h2{
+        font-size: 3rem;
+        letter-spacing: 1.2px;
+        }
+   .part2 .talk p{
+       font-size: 1.5rem;
+    
+      }
+    .list{
+        width: 90%;
+    }
+    .list h1{
+       font-size: 1rem;
+      text-align: center;  
+    }
+   
+.text{
+      font-size: 1rem;
+     font-weight: 400;
+} 
+ .title{
+         font-size: 1.1rem;
+    }
+    .banner2 .box .headings p
+    {   
+       font-size: 1rem;
+       padding: 13px 0;
+     }
+  
+    .banner2 .box .search input{
+        font-size: 10px;
+              
+    }
+    .banner2 .box .search button{
+       /* text-transform: uppercase;*/
+        font-size: 1.625rem;
+        min-width: 310px;
+        height: 60px;
+     }
+     
+    .footer  
+    {
+        flex-direction: column;
+    }
+    .foot p{
+        color: #fff;
+        font-size: 15px;
+        margin-left: 20%;
+        padding: 2%  2%;
+       
+    }
+    .footer .column1{
+          width: 100%;
+    }  
+}
